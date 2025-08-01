@@ -19,11 +19,11 @@ export default {
 		},
 		extend: {
 			colors: {
-				'tutor-dark-blue': '#2C3E50',
-				'tutor-purple': '#8E44AD',
-				'tutor-orange': '#E67E22',
-				'tutor-violet': '#8B5CF6',
-				'tutor-light-purple': '#D6BCFA',
+				'tutor-indigo': '#6366F1',
+				'tutor-purple': '#8B5CF6', 
+				'tutor-emerald': '#10B981',
+				'tutor-violet': '#1F2937',
+				'tutor-light': '#F8FAFC',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -69,9 +69,9 @@ export default {
 				}
 			},
 			backgroundImage: {
-				'tutor-gradient': 'linear-gradient(135deg, #2C3E50 0%, #8E44AD 100%)',
-				'card-gradient': 'linear-gradient(145deg, #8B5CF6 0%, #D6BCFA 100%)',
-				'hero-gradient': 'linear-gradient(120deg, #2C3E50 0%, #8E44AD 50%, #8B5CF6 100%)'
+				'tutor-gradient': 'linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)',
+				'card-gradient': 'linear-gradient(145deg, #8B5CF6 0%, #10B981 100%)',
+				'hero-gradient': 'linear-gradient(120deg, #1F2937 0%, #6366F1 50%, #8B5CF6 100%)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -5,25 +5,27 @@ import Icon from "@/components/ui/icon"
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-tutor-light">
       {/* Header */}
       <header className="bg-hero-gradient text-white py-4 px-6 shadow-lg">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <Icon name="Code" size={32} className="text-tutor-orange" />
-            <span className="text-2xl font-bold">CodeMentor</span>
+            <div className="w-8 h-8 bg-tutor-indigo rounded-lg flex items-center justify-center">
+              <Icon name="Code" size={20} className="text-white" />
+            </div>
+            <span className="text-2xl font-bold">PROGRAMMING TUTOR</span>
           </div>
           <div className="hidden md:flex items-center space-x-6 text-sm">
             <span className="flex items-center space-x-2">
-              <Icon name="Star" size={16} className="text-tutor-orange" />
+              <Icon name="Star" size={16} className="text-tutor-emerald" />
               <span>8+ лет опыта</span>
             </span>
             <span className="flex items-center space-x-2">
-              <Icon name="Users" size={16} className="text-tutor-orange" />
+              <Icon name="Users" size={16} className="text-tutor-emerald" />
               <span>1000+ успешных учеников</span>
             </span>
           </div>
-          <Button className="bg-tutor-orange hover:bg-tutor-orange/90 text-white font-semibold px-6 py-3 animate-pulse-glow">
+          <Button className="bg-tutor-indigo hover:bg-tutor-purple text-white font-semibold px-6 py-3 animate-pulse-glow border-0">
             Начать обучение прямо сейчас!
           </Button>
         </div>
@@ -34,30 +36,30 @@ export default function Index() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Станьте <span className="text-tutor-orange">профессиональным</span><br />
+              Станьте <span className="text-tutor-emerald">профессиональным</span><br />
               программистом с нуля
             </h1>
-            <p className="text-2xl mb-8 text-tutor-light-purple">
-              Индивидуальный подход и реальные проекты
+            <p className="text-2xl mb-12 text-gray-200 max-w-3xl mx-auto">
+              Индивидуальный подход, реальные проекты и результат уже через 3 месяца
             </p>
           </div>
 
           {/* Pain Points */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12 animate-fade-in-up">
+          <div className="grid md:grid-cols-3 gap-8 mb-16 animate-fade-in-up">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <Icon name="DollarSign" size={48} className="text-red-400 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Устали от низкой зарплаты?</h3>
-              <p className="text-tutor-light-purple">Программисты зарабатывают от 100,000₽</p>
+              <Icon name="DollarSign" size={56} className="text-red-400 mx-auto mb-6" />
+              <h3 className="text-2xl font-semibold mb-4">Устали от низкой зарплаты?</h3>
+              <p className="text-gray-200 text-lg">Программисты зарабатывают от 100,000₽ в месяц</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <Icon name="Home" size={48} className="text-green-400 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Хотите работать удаленно?</h3>
-              <p className="text-tutor-light-purple">Работайте из любой точки мира</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <Icon name="Home" size={56} className="text-tutor-emerald mx-auto mb-6" />
+              <h3 className="text-2xl font-semibold mb-4">Хотите работать удаленно?</h3>
+              <p className="text-gray-200 text-lg">Работайте из любой точки мира в удобное время</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <Icon name="Zap" size={48} className="text-yellow-400 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Страшно начать с нуля?</h3>
-              <p className="text-tutor-light-purple">Мы научим вас пошагово</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <Icon name="Zap" size={56} className="text-yellow-400 mx-auto mb-6" />
+              <h3 className="text-2xl font-semibold mb-4">Страшно начать с нуля?</h3>
+              <p className="text-gray-200 text-lg">Мы научим вас пошагово от основ до трудоустройства</p>
             </div>
           </div>
 
