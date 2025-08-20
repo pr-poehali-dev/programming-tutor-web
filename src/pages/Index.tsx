@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Icon from "@/components/ui/icon"
+import ContactModal from "@/components/ContactModal"
+import ContactForm from "@/components/ContactForm"
 
 export default function Index() {
   return (
@@ -25,9 +27,11 @@ export default function Index() {
               <span>1000+ успешных учеников</span>
             </span>
           </div>
-          <Button className="bg-tutor-indigo hover:bg-tutor-purple text-white font-semibold px-6 py-3 animate-pulse-glow border-0">
-            Начать обучение прямо сейчас!
-          </Button>
+          <ContactModal>
+            <Button className="bg-tutor-indigo hover:bg-tutor-purple text-white font-semibold px-6 py-3 animate-pulse-glow border-0">
+              Начать обучение прямо сейчас!
+            </Button>
+          </ContactModal>
         </div>
       </header>
 
@@ -85,10 +89,12 @@ export default function Index() {
             </div>
           </div>
 
-          <Button size="lg" className="bg-tutor-orange hover:bg-tutor-orange/90 text-white text-lg px-12 py-4 animate-pulse-glow">
-            <Icon name="PlayCircle" size={24} className="mr-2" />
-            Записаться на бесплатную консультацию
-          </Button>
+          <ContactModal>
+            <Button size="lg" className="bg-tutor-indigo hover:bg-tutor-purple text-white text-xl px-16 py-6 animate-pulse-glow border-0 rounded-xl">
+              <Icon name="PlayCircle" size={28} className="mr-3" />
+              Записаться на бесплатную консультацию
+            </Button>
+          </ContactModal>
         </div>
       </section>
 
@@ -127,10 +133,12 @@ export default function Index() {
                 </p>
               </div>
               <div className="mt-8">
-                <Button size="lg" className="bg-tutor-gradient text-white hover:opacity-90">
-                  <Icon name="MessageCircle" size={24} className="mr-2" />
-                  Связаться со мной
-                </Button>
+                <ContactModal>
+                  <Button size="lg" className="bg-tutor-gradient text-white hover:opacity-90">
+                    <Icon name="MessageCircle" size={24} className="mr-2" />
+                    Связаться со мной
+                  </Button>
+                </ContactModal>
               </div>
             </div>
           </div>
@@ -237,10 +245,12 @@ export default function Index() {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" className="bg-tutor-orange hover:bg-tutor-orange/90 text-white text-lg px-12 py-4">
-              <Icon name="Calendar" size={24} className="mr-2" />
-              Выбрать программу обучения
-            </Button>
+            <ContactModal>
+              <Button size="lg" className="bg-tutor-orange hover:bg-tutor-orange/90 text-white text-lg px-12 py-4">
+                <Icon name="Calendar" size={24} className="mr-2" />
+                Выбрать программу обучения
+              </Button>
+            </ContactModal>
           </div>
         </div>
       </section>
@@ -361,10 +371,12 @@ export default function Index() {
           </div>
 
           <div className="space-y-4">
-            <Button size="lg" className="bg-tutor-orange hover:bg-tutor-orange/90 text-white text-xl px-12 py-6 animate-pulse-glow">
-              <Icon name="Rocket" size={24} className="mr-2" />
-              Записаться на бесплатную консультацию
-            </Button>
+            <ContactModal>
+              <Button size="lg" className="bg-tutor-orange hover:bg-tutor-orange/90 text-white text-xl px-12 py-6 animate-pulse-glow">
+                <Icon name="Rocket" size={24} className="mr-2" />
+                Записаться на бесплатную консультацию
+              </Button>
+            </ContactModal>
             <p className="text-sm text-tutor-light-purple">
               📞 +7 (999) 123-45-67 | 📧 info@codementor.ru | 💬 Telegram: @codementor
             </p>
@@ -433,6 +445,22 @@ export default function Index() {
           </div>
         </div>
       </footer>
+
+      {/* Contact Form Section */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <Badge className="bg-tutor-indigo text-white px-4 py-2 text-base mb-6">Форма заявки</Badge>
+            <h2 className="text-4xl font-bold text-tutor-violet mb-6">
+              Запишитесь на бесплатную консультацию
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Заполните форму, и Александр свяжется с вами в течение 2 часов
+            </p>
+          </div>
+          <ContactForm />
+        </div>
+      </section>
     </div>
   )
 }
